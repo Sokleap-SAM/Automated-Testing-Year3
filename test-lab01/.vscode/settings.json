@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "test-lib/junit-platform-console-standalone-1.13.0-M3.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\Zenbook\\Downloads\\junit-platform-console-standalone-1.10.0-javadoc.jar"
+        ]
+    }
+}
