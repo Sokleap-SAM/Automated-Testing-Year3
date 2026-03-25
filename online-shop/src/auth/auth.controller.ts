@@ -1,4 +1,11 @@
-import { Body, Controller, HttpCode, HttpStatus, Post } from '@nestjs/common';
+import {
+  BadRequestException,
+  Body,
+  Controller,
+  HttpCode,
+  HttpStatus,
+  Post,
+} from '@nestjs/common';
 import { AuthService } from './auth.service';
 
 @Controller('auth')
@@ -10,7 +17,7 @@ export class AuthController {
   signIn(@Body() signInDto: Record<string, any>) {
     console.log('signInDto', signInDto);
     if (!signInDto.email || !signInDto.password) {
-      throw new Error('Email and password are required');
+      throw new BadRequestException('Email and password are required');
     }
     return this.authService.signIn(signInDto.email, signInDto.password);
   }
