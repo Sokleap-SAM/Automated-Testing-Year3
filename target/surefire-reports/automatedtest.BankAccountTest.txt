@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: automatedtest.AppTest
+Test set: automatedtest.BankAccountTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in automatedtest.AppTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in automatedtest.BankAccountTest

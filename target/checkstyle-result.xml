@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.45.1">
-<file name="D:\Year3\automated testing\lab02\src\main\java\automatedtest\App.java">
+<file name="D:\Year3\automated testing\lab02\src\main\java\automatedtest\BankAccount.java">
 </file>
 <file name="D:\Year3\automated testing\lab02\src\main\java\automatedtest\Calculator.java">
 </file>
+<file name="D:\Year3\automated testing\lab02\src\main\java\automatedtest\IBankAccount.java">
+</file>
 <file name="D:\Year3\automated testing\lab02\src\main\java\automatedtest\ICalculator.java">
 </file>
-<file name="D:\Year3\automated testing\lab02\src\test\java\automatedtest\AppTest.java">
+<file name="D:\Year3\automated testing\lab02\src\test\java\automatedtest\BankAccountTest.java">
 </file>
 <file name="D:\Year3\automated testing\lab02\src\test\java\automatedtest\CalculatorTest.java">
 </file>

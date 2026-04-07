@@ -1,3 +1,4 @@
 automatedtest\ICalculator.class
-automatedtest\App.class
 automatedtest\Calculator.class
+automatedtest\BankAccount.class
+automatedtest\IBankAccount.class
