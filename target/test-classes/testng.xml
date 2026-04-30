@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Tests" verbose="1">
+
+    <!-- =========================================================
+         UI Tests  (Selenium + TestNG)
+         ========================================================= -->
+    <test name="UI Tests - Login">
+        <packages>
+            <package name="com.ecommerce.tests"/>
+        </packages>
+    </test>
+
+    <!-- =========================================================
+         API Tests  (REST-assured → jsonplaceholder.typicode.com)
+         No auth, no server to start – works out of the box.
+         ========================================================= -->
+    <test name="API Tests - Users">
+        <classes>
+            <class name="com.ecommerce.tests.api.UserApiTest"/>
+        </classes>
+    </test>
+
+    <test name="API Tests - Posts">
+        <classes>
+            <class name="com.ecommerce.tests.api.PostApiTest"/>
+        </classes>
+    </test>
+
+</suite>

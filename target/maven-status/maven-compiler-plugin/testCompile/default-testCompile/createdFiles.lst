@@ -1,0 +1,7 @@
+com\ecommerce\listeners\TestListener.class
+com\ecommerce\tests\api\UserApiTest.class
+com\ecommerce\tests\LoginTest.class
+com\ecommerce\tests\api\BaseApiTest.class
+com\ecommerce\listeners\ApiTestListener.class
+com\ecommerce\tests\api\PostApiTest.class
+com\ecommerce\tests\BaseTest.class

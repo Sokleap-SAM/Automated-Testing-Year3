@@ -1,0 +1,9 @@
+com\ecommerce\Main.class
+com\ecommerce\api\models\User.class
+com\ecommerce\api\models\UserRequest.class
+com\ecommerce\driver\DriverManager.class
+com\ecommerce\pages\LoginPage.class
+com\ecommerce\utils\ScreenshotUtil.class
+com\ecommerce\pages\HomePage.class
+com\ecommerce\api\utils\ApiConfig.class
+com\ecommerce\driver\DriverFactory.class

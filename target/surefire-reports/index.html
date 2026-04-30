@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-All_Tests" class="navigator-link">
+              <span class="suite-name border-passed">All Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-All_Tests" class="navigator-link ">
+                    <span>D:\Year3\automated testing\lab03\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-All_Tests" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-All_Tests" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-All_Tests" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-All_Tests" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-All_Tests" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-All_Tests" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">27 methods,   27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Tests" class="hide-methods passed suite-All_Tests"> (hide)</a> <!-- hide-methods passed suite-All_Tests -->
+                      <a href="#" panel-name="suite-All_Tests" class="show-methods passed suite-All_Tests"> (show)</a> <!-- show-methods passed suite-All_Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Tests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest(tomsmith, SuperSecretPassword!, true)">loginTest(tomsmith, SuperSecretPassword!, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.LoginTest" class="method navigator-link" hash-for-method="loginTest(wronguser, wrongpass, false)">loginTest(wronguser, wrongpass, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testCreatePost(Introduction to REST APIs, REST stands for Representational State Transfer., 1)">testCreatePost(Introduction to REST APIs, REST stands for Representational State Transfer., 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testCreatePost(Data-Driven Testing Guide, Use data providers to drive test inputs., 2)">testCreatePost(Data-Driven Testing Guide, Use data providers to drive test inputs., 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testCreatePost(API Schema Validation Tips, Always validate response bodies against a schema., 1)">testCreatePost(API Schema Validation Tips, Always validate response bodies against a schema., 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testCreateUser(Carol White, Product Manager)">testCreateUser(Carol White, Product Manager)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testCreateUser(Alice Smith, Software Engineer)">testCreateUser(Alice Smith, Software Engineer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testCreateUser(Dave Brown, DevOps Engineer)">testCreateUser(Dave Brown, DevOps Engineer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testCreateUser(Bob Johnson, QA Engineer)">testCreateUser(Bob Johnson, QA Engineer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testCreateUser(Eve Davis, Data Scientist)">testCreateUser(Eve Davis, Data Scientist)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testDeletePost">testDeletePost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testDeleteUser">testDeleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testGetAllPosts">testGetAllPosts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testGetAllUsers">testGetAllUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testGetNonExistentPost">testGetNonExistentPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testGetNonExistentUser">testGetNonExistentUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testGetPostsByUser">testGetPostsByUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testGetSinglePost(50)">testGetSinglePost(50)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testGetSinglePost(1)">testGetSinglePost(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testGetSinglePost(100)">testGetSinglePost(100)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.PostApiTest" class="method navigator-link" hash-for-method="testGetSinglePost(25)">testGetSinglePost(25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testGetSingleUser(1)">testGetSingleUser(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testGetSingleUser(10)">testGetSingleUser(10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testGetSingleUser(5)">testGetSingleUser(5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testGetSingleUser(2)">testGetSingleUser(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testPatchUser">testPatchUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Tests" title="com.ecommerce.tests.api.UserApiTest" class="method navigator-link" hash-for-method="testUpdateUser">testUpdateUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Tests" class="panel All_Tests">
+          <div class="suite-All_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ecommerce.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(tomsmith, SuperSecretPassword!, true)">
+                  </a> <!-- loginTest(tomsmith, SuperSecretPassword!, true) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(tomsmith,SuperSecretPassword!,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(wronguser, wrongpass, false)">
+                  </a> <!-- loginTest(wronguser, wrongpass, false) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(wronguser,wrongpass,false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-passed -->
+          <div class="suite-All_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ecommerce.tests.api.UserApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(Carol White, Product Manager)">
+                  </a> <!-- testCreateUser(Carol White, Product Manager) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(Carol White,Product Manager)</span>
+                  <em>
+(POST /users creates user – data driven)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(Alice Smith, Software Engineer)">
+                  </a> <!-- testCreateUser(Alice Smith, Software Engineer) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(Alice Smith,Software Engineer)</span>
+                  <em>
+(POST /users creates user – data driven)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(Dave Brown, DevOps Engineer)">
+                  </a> <!-- testCreateUser(Dave Brown, DevOps Engineer) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(Dave Brown,DevOps Engineer)</span>
+                  <em>
+(POST /users creates user – data driven)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(Bob Johnson, QA Engineer)">
+                  </a> <!-- testCreateUser(Bob Johnson, QA Engineer) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(Bob Johnson,QA Engineer)</span>
+                  <em>
+(POST /users creates user – data driven)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(Eve Davis, Data Scientist)">
+                  </a> <!-- testCreateUser(Eve Davis, Data Scientist) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(Eve Davis,Data Scientist)</span>
+                  <em>
+(POST /users creates user – data driven)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUser">
+                  </a> <!-- testDeleteUser -->
+                  <span class="method-name">testDeleteUser</span>
+                  <em>
+(DELETE /users/{id} returns 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllUsers">
+                  </a> <!-- testGetAllUsers -->
+                  <span class="method-name">testGetAllUsers</span>
+                  <em>
+(GET /users returns list of 10 users matching schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNonExistentUser">
+                  </a> <!-- testGetNonExistentUser -->
+                  <span class="method-name">testGetNonExistentUser</span>
+                  <em>
+(GET /users/{id} returns 404 for unknown user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSingleUser(1)">
+                  </a> <!-- testGetSingleUser(1) -->
+                  <span class="method-name">testGetSingleUser</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(GET /users/{id} returns single user matching schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSingleUser(10)">
+                  </a> <!-- testGetSingleUser(10) -->
+                  <span class="method-name">testGetSingleUser</span>
+                  <span class="parameters">(10)</span>
+                  <em>
+(GET /users/{id} returns single user matching schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSingleUser(5)">
+                  </a> <!-- testGetSingleUser(5) -->
+                  <span class="method-name">testGetSingleUser</span>
+                  <span class="parameters">(5)</span>
+                  <em>
+(GET /users/{id} returns single user matching schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSingleUser(2)">
+                  </a> <!-- testGetSingleUser(2) -->
+                  <span class="method-name">testGetSingleUser</span>
+                  <span class="parameters">(2)</span>
+                  <em>
+(GET /users/{id} returns single user matching schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPatchUser">
+                  </a> <!-- testPatchUser -->
+                  <span class="method-name">testPatchUser</span>
+                  <em>
+(PATCH /users/{id} partially updates user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUser">
+                  </a> <!-- testUpdateUser -->
+                  <span class="method-name">testUpdateUser</span>
+                  <em>
+(PUT /users/{id} updates user and returns updated fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-passed -->
+          <div class="suite-All_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ecommerce.tests.api.PostApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreatePost(Introduction to REST APIs, REST stands for Representational State Transfer., 1)">
+                  </a> <!-- testCreatePost(Introduction to REST APIs, REST stands for Representational State Transfer., 1) -->
+                  <span class="method-name">testCreatePost</span>
+                  <span class="parameters">(Introduction to REST APIs,REST stands for Representational State Transfer.,1)</span>
+                  <em>
+(POST /posts creates post – data driven)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreatePost(Data-Driven Testing Guide, Use data providers to drive test inputs., 2)">
+                  </a> <!-- testCreatePost(Data-Driven Testing Guide, Use data providers to drive test inputs., 2) -->
+                  <span class="method-name">testCreatePost</span>
+                  <span class="parameters">(Data-Driven Testing Guide,Use data providers to drive test inputs.,2)</span>
+                  <em>
+(POST /posts creates post – data driven)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreatePost(API Schema Validation Tips, Always validate response bodies against a schema., 1)">
+                  </a> <!-- testCreatePost(API Schema Validation Tips, Always validate response bodies against a schema., 1) -->
+                  <span class="method-name">testCreatePost</span>
+                  <span class="parameters">(API Schema Validation Tips,Always validate response bodies against a schema.,1)</span>
+                  <em>
+(POST /posts creates post – data driven)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeletePost">
+                  </a> <!-- testDeletePost -->
+                  <span class="method-name">testDeletePost</span>
+                  <em>
+(DELETE /posts/{id} returns 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllPosts">
+                  </a> <!-- testGetAllPosts -->
+                  <span class="method-name">testGetAllPosts</span>
+                  <em>
+(GET /posts returns list of 100 posts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNonExistentPost">
+                  </a> <!-- testGetNonExistentPost -->
+                  <span class="method-name">testGetNonExistentPost</span>
+                  <em>
+(GET /posts/{id} returns 404 for unknown post)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetPostsByUser">
+                  </a> <!-- testGetPostsByUser -->
+                  <span class="method-name">testGetPostsByUser</span>
+                  <em>
+(GET /posts?userId=1 returns posts filtered by user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSinglePost(50)">
+                  </a> <!-- testGetSinglePost(50) -->
+                  <span class="method-name">testGetSinglePost</span>
+                  <span class="parameters">(50)</span>
+                  <em>
+(GET /posts/{id} returns single post matching schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSinglePost(1)">
+                  </a> <!-- testGetSinglePost(1) -->
+                  <span class="method-name">testGetSinglePost</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(GET /posts/{id} returns single post matching schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSinglePost(100)">
+                  </a> <!-- testGetSinglePost(100) -->
+                  <span class="method-name">testGetSinglePost</span>
+                  <span class="parameters">(100)</span>
+                  <em>
+(GET /posts/{id} returns single post matching schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSinglePost(25)">
+                  </a> <!-- testGetSinglePost(25) -->
+                  <span class="method-name">testGetSinglePost</span>
+                  <span class="parameters">(25)</span>
+                  <em>
+(GET /posts/{id} returns single post matching schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-passed -->
+        </div> <!-- panel All_Tests -->
+        <div panel-name="test-xml-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Year3\automated testing\lab03\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;All Tests&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UI Tests - Login&quot; verbose=&quot;0&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.ecommerce.tests&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ecommerce.tests.BaseTest&quot;/&gt;
+      &lt;class name=&quot;com.ecommerce.tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UI Tests - Login --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;API Tests - Users&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ecommerce.tests.api.UserApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API Tests - Users --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;API Tests - Posts&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ecommerce.tests.api.PostApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API Tests - Posts --&gt;
+&lt;/suite&gt; &lt;!-- All Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">UI Tests - Login (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">API Tests - Users (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">API Tests - Posts (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Tests');
+function tableData_All_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(27);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCreateUser')
+data.setCell(0, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(0, 3, 7657);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.ecommerce.tests.LoginTest')
+data.setCell(1, 3, 6289);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.ecommerce.tests.LoginTest')
+data.setCell(2, 3, 5497);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testGetSinglePost')
+data.setCell(3, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(3, 3, 1337);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testCreateUser')
+data.setCell(4, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(4, 3, 1157);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGetPostsByUser')
+data.setCell(5, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(5, 3, 1064);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testGetNonExistentUser')
+data.setCell(6, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(6, 3, 951);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testUpdateUser')
+data.setCell(7, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(7, 3, 949);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testGetNonExistentPost')
+data.setCell(8, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(8, 3, 924);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testCreateUser')
+data.setCell(9, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(9, 3, 811);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testCreateUser')
+data.setCell(10, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(10, 3, 712);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testCreatePost')
+data.setCell(11, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(11, 3, 679);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testPatchUser')
+data.setCell(12, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(12, 3, 647);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testCreatePost')
+data.setCell(13, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(13, 3, 621);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testDeleteUser')
+data.setCell(14, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(14, 3, 611);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testCreateUser')
+data.setCell(15, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(15, 3, 606);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testCreatePost')
+data.setCell(16, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(16, 3, 600);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testGetAllUsers')
+data.setCell(17, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(17, 3, 578);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testDeletePost')
+data.setCell(18, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(18, 3, 534);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testGetSinglePost')
+data.setCell(19, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(19, 3, 431);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testGetAllPosts')
+data.setCell(20, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(20, 3, 402);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testGetSingleUser')
+data.setCell(21, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(21, 3, 395);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testGetSingleUser')
+data.setCell(22, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(22, 3, 391);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testGetSingleUser')
+data.setCell(23, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(23, 3, 369);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testGetSingleUser')
+data.setCell(24, 2, 'com.ecommerce.tests.api.UserApiTest')
+data.setCell(24, 3, 367);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testGetSinglePost')
+data.setCell(25, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(25, 3, 344);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testGetSinglePost')
+data.setCell(26, 2, 'com.ecommerce.tests.api.PostApiTest')
+data.setCell(26, 3, 342);
+window.suiteTableData['All_Tests']= { tableData: data, tableDiv: 'times-div-All_Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <div id="times-div-All_Tests">
+              </div> <!-- times-div-All_Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginTest(tomsmith, SuperSecretPassword!, true)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Saved screenshot: target\screenshots\loginTest_SUCCESS_20260430_084211709.png</span>
+                <span class="reporter-method-output"><a href='target\screenshots\loginTest_SUCCESS_20260430_084211709.png'>Screenshot</a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginTest(wronguser, wrongpass, false)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Saved screenshot: target\screenshots\loginTest_SUCCESS_20260430_084218942.png</span>
+                <span class="reporter-method-output"><a href='target\screenshots\loginTest_SUCCESS_20260430_084218942.png'>Screenshot</a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(tomsmith, SuperSecretPassword!, true)</span>
+                <span class="method-start">1881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">8737 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(wronguser, wrongpass, false)</span>
+                <span class="method-start">9998 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15622 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.tests.api.UserApiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpApi</span>
+                <span class="method-start">17027 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(Alice Smith, Software Engineer)</span>
+                <span class="method-start">18646 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(Bob Johnson, QA Engineer)</span>
+                <span class="method-start">26306 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(Carol White, Product Manager)</span>
+                <span class="method-start">27467 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(Dave Brown, DevOps Engineer)</span>
+                <span class="method-start">28182 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(Eve Davis, Data Scientist)</span>
+                <span class="method-start">28995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUser</span>
+                <span class="method-start">29604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetAllUsers</span>
+                <span class="method-start">30218 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNonExistentUser</span>
+                <span class="method-start">30798 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetSingleUser(1)</span>
+                <span class="method-start">31754 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetSingleUser(2)</span>
+                <span class="method-start">32147 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetSingleUser(5)</span>
+                <span class="method-start">32544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetSingleUser(10)</span>
+                <span class="method-start">32915 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPatchUser</span>
+                <span class="method-start">33284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUser</span>
+                <span class="method-start">33934 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ecommerce.tests.api.PostApiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpApi</span>
+                <span class="method-start">35133 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCreatePost(Introduction to REST APIs, REST stands for Representational State Transfer., 1)</span>
+                <span class="method-start">35141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreatePost(Data-Driven Testing Guide, Use data providers to drive test inputs., 2)</span>
+                <span class="method-start">35824 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreatePost(API Schema Validation Tips, Always validate response bodies against a schema., 1)</span>
+                <span class="method-start">36447 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeletePost</span>
+                <span class="method-start">37049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetAllPosts</span>
+                <span class="method-start">37584 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNonExistentPost</span>
+                <span class="method-start">37990 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetPostsByUser</span>
+                <span class="method-start">38917 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetSinglePost(1)</span>
+                <span class="method-start">39985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetSinglePost(25)</span>
+                <span class="method-start">40330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetSinglePost(50)</span>
+                <span class="method-start">41669 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetSinglePost(100)</span>
+                <span class="method-start">42013 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
