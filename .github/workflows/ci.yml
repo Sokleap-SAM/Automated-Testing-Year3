@@ -17,6 +17,9 @@ jobs:
     name: API Tests (JSONPlaceholder)
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      checks: write
+      contents: read
 
     steps:
       - name: Checkout repository
@@ -68,6 +71,9 @@ jobs:
     name: UI Tests (Selenium / Chrome)
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      checks: write
+      contents: read
 
     steps:
       - name: Checkout repository
