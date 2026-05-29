@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "jmeter:install": "powershell -NoProfile -Command \"$u='https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.6.3.zip'; $o='tools\\apache-jmeter-5.6.3.zip'; if (!(Test-Path 'tools')) { New-Item -ItemType Directory -Force -Path 'tools' | Out-Null }; Invoke-WebRequest -Uri $u -OutFile $o; Expand-Archive -Path $o -DestinationPath 'tools'; Remove-Item $o\"",
-    "jmeter:plan": "if exist \"tools\\apache-jmeter-5.6.3\\bin\\jmeter.bat\" (\"tools\\apache-jmeter-5.6.3\\bin\\jmeter.bat\" -n -t plan.jmx -l results.jtl) else (jmeter -n -t plan.jmx -l results.jtl)",
     "jmeter:report": "if exist \"tools\\apache-jmeter-5.6.3\\bin\\jmeter.bat\" (\"tools\\apache-jmeter-5.6.3\\bin\\jmeter.bat\" -g results.jtl -o jmeter-report) else (jmeter -g results.jtl -o jmeter-report)",
-    "start-api": "node api.js",
     "start": "node api.js"
   },
   "devDependencies": {}
