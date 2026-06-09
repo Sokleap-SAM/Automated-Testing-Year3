@@ -1,0 +1,8 @@
+<testsuite name="simulations.ComputerDatabaseSimulation" tests="2" errors="0" failures="1" time="0">
+  <testcase name="Global: 95th percentile of response time is less than 800.0" status="true" time="0">
+  <system-out>Global: 95th percentile of response time is less than 800.0</system-out>
+</testcase>
+<testcase name="Global: percentage of successful events is greater than 99.0" status="false" time="0">
+  <failure type="Global: percentage of successful events is greater than 99.0">Actual value: 74.06062519734765</failure>
+</testcase>
+</testsuite>

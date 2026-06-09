@@ -1,0 +1,23 @@
+<testsuite name="simulations.BasicSimulation" tests="7" errors="0" failures="4" time="0">
+  <testcase name="Global: max of response time is less than 2000.0" status="true" time="0">
+  <system-out>Global: max of response time is less than 2000.0</system-out>
+</testcase>
+<testcase name="Global: 95th percentile of response time is less than 800.0" status="true" time="0">
+  <system-out>Global: 95th percentile of response time is less than 800.0</system-out>
+</testcase>
+<testcase name="Global: percentage of successful events is greater than 99.0" status="false" time="0">
+  <failure type="Global: percentage of successful events is greater than 99.0">Actual value: 0.0</failure>
+</testcase>
+<testcase name="Home: count of failed events is less than 10.0" status="false" time="0">
+  <failure type="Home: count of failed events is less than 10.0">Actual value: 4310.0</failure>
+</testcase>
+<testcase name="Search: count of failed events is less than 10.0" status="false" time="0">
+  <failure type="Search: count of failed events is less than 10.0">Actual value: 4310.0</failure>
+</testcase>
+<testcase name="Login: count of failed events is less than 10.0" status="false" time="0">
+  <failure type="Login: count of failed events is less than 10.0">Actual value: 4310.0</failure>
+</testcase>
+<testcase name="Login: mean of response time is less than 500.0" status="true" time="0">
+  <system-out>Login: mean of response time is less than 500.0</system-out>
+</testcase>
+</testsuite>

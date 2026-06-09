@@ -1,0 +1,46 @@
+name: Gatling Load Test
+
+on:
+  push:
+    branches: [ Lab-06 ]
+  pull_request:
+  workflow_dispatch:   # allow manual runs
+
+jobs:
+  load-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Start backend
+        run: |
+          mvn -B -q compile
+          nohup java -cp target/classes automated.testing.ComputerDatabaseServer 8080 &
+          # wait until the backend answers
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:8080/computers > /dev/null && break
+            sleep 1
+          done
+
+      - name: Run Gatling load test
+        # Assertions set the exit code, so a failed SLA breaks the build.
+        run: >
+          mvn -B
+          -Dgatling.simulationClass=simulations.ComputerDatabaseSimulation
+          gatling:test
+          -Dusers=100 -Dramp=30 -Drps=8 -Dhold=120
+
+      - name: Publish Gatling report
+        if: always()   # upload the report even when assertions fail
+        uses: actions/upload-artifact@v4
+        with:
+          name: gatling-report
+          path: target/gatling/**
+          if-no-files-found: warn
