@@ -1,0 +1,27 @@
+name: API Tests
+
+on:
+  push:
+    branches: [Lab-07]
+  pull_request:
+    branches: [Lab-07]
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci
+      - name: Run Playwright API tests
+        run: npx playwright test        # webServer boots NestJS
+      - name: Build Allure report
+        if: always()
+        run: npx allure generate allure-results --clean -o allure-report
+      - name: Publish report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
