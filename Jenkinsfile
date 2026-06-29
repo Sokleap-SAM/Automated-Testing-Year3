@@ -6,7 +6,7 @@ pipeline {
     stage('Package'){ steps { sh 'echo "package the project..."' } }
   }
   post {
-    always  { junit '**/target/surefire-reports/*.xml' }
+    always { junit testResults: '**/target/surefire-reports/*.xml', allowEmptyResults: true }
     success { echo '✔ Pipeline green' }
     failure { echo '✗ Build failed' }
   }
