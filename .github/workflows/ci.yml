@@ -1,0 +1,38 @@
+name: build-test-report
+
+on:
+  push:
+    branches: [ Lab-08 ]
+  pull_request:
+    branches: [ Lab-08 ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 24
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '24'
+          cache: maven
+
+      - name: Install Playwright browsers
+        run: mvn -B test-compile exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install --with-deps chromium" -Dexec.classpathScope=test
+        continue-on-error: true
+
+      - name: Build & test
+        run: mvn -B test
+
+      - name: Generate Allure report
+        if: always()
+        run: mvn -B allure:report
+
+      - name: Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: target/site/allure-maven-plugin

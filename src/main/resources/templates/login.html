@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Sign in — My Cloud Drive</title>
+    <link rel="stylesheet" href="/css/app.css"/>
+</head>
+<body>
+<main class="card">
+    <h1>Sign in</h1>
+
+    <p th:if="${param.registered}" data-testid="registered" class="msg-ok">
+        Account created — please sign in.</p>
+    <p th:if="${param.error}" data-testid="login-error" class="msg-err">
+        Invalid email or password.</p>
+    <p th:if="${param.logout}" data-testid="logout-msg" class="msg-ok">
+        You have been signed out.</p>
+
+    <form method="post" action="/login" class="auth-form">
+        <label>Email
+            <input type="email" name="username" data-testid="email-input" required autofocus/>
+        </label>
+        <label>Password
+            <input type="password" name="password" data-testid="password-input" required/>
+        </label>
+        <button type="submit" data-testid="login-btn">Sign in</button>
+    </form>
+
+    <p class="switch">No account? <a href="/signup" data-testid="to-signup">Create one</a></p>
+</main>
+</body>
+</html>

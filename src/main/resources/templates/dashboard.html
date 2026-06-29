@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>My Cloud Drive</title>
+    <link rel="stylesheet" href="/css/app.css"/>
+</head>
+<body>
+<main class="card">
+    <div class="topbar">
+        <h1>My Cloud Drive</h1>
+        <form method="post" action="/logout">
+            <button type="submit" data-testid="logout-btn" class="logout">Sign out</button>
+        </form>
+    </div>
+    <p class="welcome">Signed in as <strong th:text="${displayName}">user</strong>
+        (<span th:text="${email}">user@example.com</span>)</p>
+
+    <section class="quota-box">
+        <h2>Storage quota</h2>
+        <p class="quota-line">
+            <span class="label">Quota</span>
+            <span data-testid="quota" th:text="${quota}">50 MB</span>
+        </p>
+        <p class="quota-line">
+            <span class="label">Used</span>
+            <span data-testid="used" th:text="${used}">0 MB</span>
+        </p>
+        <p class="quota-line">
+            <span class="label">Free</span>
+            <span data-testid="free" th:text="${free}">50 MB</span>
+        </p>
+    </section>
+
+    <section class="files-box">
+        <h2>My files</h2>
+        <form method="post" action="/dashboard/upload" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="file" data-testid="file-input"/>
+            <button type="submit" data-testid="upload-btn">Upload</button>
+        </form>
+
+        <ul data-testid="file-list" class="file-list">
+            <li th:if="${#lists.isEmpty(files)}" data-testid="empty" class="empty">No files yet</li>
+            <li th:each="name : ${files}" th:text="${name}" class="file-item">file.txt</li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>
