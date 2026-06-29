@@ -1,12 +1,15 @@
 pipeline {
   agent any
+  tools {
+    maven 'Maven3.9.16'
+  }
   stages {
-    stage('Build')  { steps { sh 'echo "build the project..."' } }
-    stage('Test')   { steps { sh 'echo "test the project..."' } }
-    stage('Package'){ steps { sh 'echo "package the project..."' } }
+    stage('Build')  { steps { sh 'mvn -B clean compile' } }
+    stage('Test')   { steps { sh 'mvn test' } }
+    stage('Package'){ steps { sh 'mvn package -DskipTests' } }
   }
   post {
-    always { junit testResults: '**/target/surefire-reports/*.xml', allowEmptyResults: true }
+    always  { junit '**/target/surefire-reports/*.xml' }
     success { echo '✔ Pipeline green' }
     failure { echo '✗ Build failed' }
   }
